@@ -1,5 +1,9 @@
 package libreria.demo.repositorios;
 
-public interface EditorialRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import libreria.demo.entidades.Editorial;
+
+public interface EditorialRepository extends JpaRepository<Editorial,Long>{
     
 }
