@@ -6,7 +6,7 @@ import libreria.demo.entidades.Libro;
 
 public interface LibroService {
     
-    public List<Libro> listasLibros();
+    public List<Libro> listarLibros();
 
     public void guardarLibros(Libro libro);
 
