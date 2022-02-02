@@ -31,11 +31,11 @@ public class Libro implements Serializable{
     private Boolean Alta;
 
     @ManyToOne (cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_autor",referencedColumnName = "id")
+    @JoinColumn(name = "id_autor",referencedColumnName = "id_autor")
     private Autor autor;
     
     @ManyToOne (cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_editorial",referencedColumnName = "id")
+    @JoinColumn(name = "id_editorial",referencedColumnName = "id_autor")
     private Editorial editorial;
     
 }
